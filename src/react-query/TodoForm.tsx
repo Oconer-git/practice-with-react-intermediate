@@ -29,7 +29,8 @@ const TodoForm = () => {
               userId: 1,
               completed: false
             });
-          }
+          } 
+          if(ref.current) ref.current.value = '';
         }} 
         className="row mb-3"
       >
@@ -37,7 +38,9 @@ const TodoForm = () => {
           <input ref={ref} type="text" className="form-control" />
         </div>
         <div className="col">
-          <button className="btn btn-primary">Add</button>
+          <button disabled={addTodo.isLoading} className="btn btn-primary">
+            {addTodo.isLoading ? 'adding...' : 'Add'}
+          </button>
         </div>
       </form>
     </>
