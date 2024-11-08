@@ -1,7 +1,4 @@
-import axios from 'axios';
-import { useQuery } from '@tanstack/react-query';
 import usePosts from './hooks/usePosts';
-import { useState } from 'react';
 import React, { Fragment } from 'react';
 const PostList = () => {
   const pageSize = 10;
