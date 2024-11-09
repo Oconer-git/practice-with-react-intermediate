@@ -9,17 +9,16 @@ export interface Todo {
   }
 
 const useTodos = () => {
-    const fetchTodos = () =>
+    const fetchTodos = () => 
         axios
-        .get<Todo[]>('https://jsonplaceholder.typicode.com/todos')
-        .then(res => res.data);
-
+            .get<Todo[]>('https://jsonplaceholder.typicode.com/todos')
+            .then(res => res.data)
+    
     return useQuery<Todo[], Error>({
         queryKey: ['todos'],
         queryFn: fetchTodos,
-        staleTime: 5 * 1000,
+        staleTime: 1000 * 5,
     })
 }
 
 export default useTodos;
-
