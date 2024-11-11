@@ -1,7 +1,7 @@
 import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
 import APIclient from '../services/apiClient';
-import todoService,{Todo} from '../services/todoService';
+import todoService, {Todo} from '../services/todoService';
 
 
 const useTodos = () => {
