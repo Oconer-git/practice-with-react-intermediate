@@ -1,8 +1,8 @@
-import TaskList from './TaskList';
+import { Tasklist } from './tasks';
 import React from 'react';
 
 const HomePage = () => {
-  return <TaskList />;
+  return <Tasklist />;
 };
 
 export default HomePage;

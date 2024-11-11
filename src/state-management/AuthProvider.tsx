@@ -1,6 +1,5 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode, useReducer } from 'react';
 import authReducer from './reducer/authReducer';
-import { useReducer } from 'react';
 import AuthContext from './contexts/authContext';
 
 interface Props {
@@ -17,4 +16,4 @@ const AuthProvider = ({children}: Props) => {
     )
 }
 
-export default AuthProvider
+export default AuthProvider;

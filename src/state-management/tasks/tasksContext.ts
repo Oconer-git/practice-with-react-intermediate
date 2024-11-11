@@ -1,5 +1,5 @@
-import { Task } from "../reducer/tasksReducer";
-import { TaskAction } from "../reducer/tasksReducer";
+import { Task } from "./TasksProvider";
+import { TaskAction } from "./TasksProvider";
 import React from "react";
 
 interface tasksContextType {
